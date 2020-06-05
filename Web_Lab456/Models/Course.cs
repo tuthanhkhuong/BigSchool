@@ -13,7 +13,7 @@ namespace Web_Lab456.Models
         public ApplicationUser Lecturer { get; set; }
         [Required]
 
-        public ApplicationUser LecturerId { get; set; }
+        public string LecturerId { get; set; }
         [Required]
 
         [StringLength(255)]
@@ -27,6 +27,7 @@ namespace Web_Lab456.Models
 
         public byte CategoryId { get; set; }
 
+        
     }
 
 }
