@@ -3,9 +3,10 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
+using Web_Lab456.Models;
 using Web_Lab456.ViewModels;
 
-namespace Web_Lab456.Models
+namespace Web_Lab456.ViewModels
 {
     public class CourseViewModel
     {
