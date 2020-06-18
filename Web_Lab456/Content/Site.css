@@ -3,9 +3,17 @@
     padding-bottom: 20px;
 }
 
-.narbar-inverse {
-    background-color: #ff4342;
-    border-color: #ff4342;
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists */
+.navbar-inverse {
+    background-color: #d41d50;
+    border-color: #fbf6f6;
 }
 
     .narbar-inverse .narbar-nav > li > a {
@@ -15,11 +23,6 @@
     .narbar-inverse .narbar-brand {
         color: #fff;
     }
-/* Set padding to keep content from hitting the edges */
-.body-content {
-    padding-left: 15px;
-    padding-right: 15px;
-}
 
 /* Override the default bootstrap behavior where horizontal description lists 
    will truncate terms that are too long to fit in the left column 
