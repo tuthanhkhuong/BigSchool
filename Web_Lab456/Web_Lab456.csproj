@@ -227,9 +227,14 @@
     <Compile Include="Migrations\202006181449100_AddNameColumnToApplicationUser.Designer.cs">
       <DependentUpon>202006181449100_AddNameColumnToApplicationUser.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202006181604542_AddAttendance.cs" />
+    <Compile Include="Migrations\202006181604542_AddAttendance.Designer.cs">
+      <DependentUpon>202006181604542_AddAttendance.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
+    <Compile Include="Models\Attendance.cs" />
     <Compile Include="Models\Category.cs" />
     <Compile Include="Models\Course.cs" />
     <Compile Include="Models\ApplicationUser.cs" />
@@ -329,6 +334,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202006181449100_AddNameColumnToApplicationUser.resx">
       <DependentUpon>202006181449100_AddNameColumnToApplicationUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202006181604542_AddAttendance.resx">
+      <DependentUpon>202006181604542_AddAttendance.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
