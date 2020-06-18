@@ -75,6 +75,11 @@ namespace Web_Lab456.Models
         [Display(Name = "Password")]
         public string Password { get; set; }
 
+        [Required]
+        [StringLength(255)]
+        public string Name { get; set; }
+
+
         [DataType(DataType.Password)]
         [Display(Name = "Confirm password")]
         [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
