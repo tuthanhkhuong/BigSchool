@@ -3,6 +3,18 @@
     padding-bottom: 20px;
 }
 
+.narbar-inverse {
+    background-color: #ff4342;
+    border-color: #ff4342;
+}
+
+    .narbar-inverse .narbar-nav > li > a {
+        color: #fff;
+    }
+
+    .narbar-inverse .narbar-brand {
+        color: #fff;
+    }
 /* Set padding to keep content from hitting the edges */
 .body-content {
     padding-left: 15px;
