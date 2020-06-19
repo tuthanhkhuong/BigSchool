@@ -24,13 +24,13 @@ namespace Web_Lab456.Controllers
             .Include(c => c.Category)
             .Where(c => c.DateTime > DateTime.Now);
 
-            //var viewModel = new CoursesViewModel
-            //{
-            //    UpcomingCourses = upcommingCourses,
-            //    ShowAction = User.Identity.IsAuthenticated
-            //};
-            //return View(viewModel);
-            return View(upcommingCourses);
+            var viewModel = new CoursesViewModel
+            {
+                UpcomingCourses = upcommingCourses,
+                ShowAction = User.Identity.IsAuthenticated
+            };
+            return View(viewModel);
+            //return View(upcommingCourses);
         }
 
         public ActionResult About()
@@ -45,12 +45,6 @@ namespace Web_Lab456.Controllers
             ViewBag.Message = "Your contact page.";
 
             return View();
-        }
-
-        private class CoursesViewModel
-        {
-            public IEnumerable<Course> UpcomingCourses { get; set; }
-            public bool ShowAction { get; set; }
-        }
+        } 
     }
 }

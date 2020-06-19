@@ -249,6 +249,10 @@
     <Compile Include="Migrations\202006190322581_AddFollowingsTable.Designer.cs">
       <DependentUpon>202006190322581_AddFollowingsTable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202006190706270_AddIsCanceledColumnToCourse.cs" />
+    <Compile Include="Migrations\202006190706270_AddIsCanceledColumnToCourse.Designer.cs">
+      <DependentUpon>202006190706270_AddIsCanceledColumnToCourse.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
@@ -257,6 +261,7 @@
     <Compile Include="Models\Course.cs" />
     <Compile Include="Models\ApplicationUser.cs" />
     <Compile Include="Models\Following.cs" />
+    <Compile Include="ViewModels\CoursesViewModel.cs" />
     <Compile Include="ViewModels\CourseViewModel.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="ViewModels\ValidTimeAttribute.cs" />
@@ -323,6 +328,7 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Courses\Create.cshtml" />
     <Content Include="Views\Courses\Mine.cshtml" />
+    <Content Include="Views\Courses\Attending.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -360,6 +366,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202006190322581_AddFollowingsTable.resx">
       <DependentUpon>202006190322581_AddFollowingsTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202006190706270_AddIsCanceledColumnToCourse.resx">
+      <DependentUpon>202006190706270_AddIsCanceledColumnToCourse.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

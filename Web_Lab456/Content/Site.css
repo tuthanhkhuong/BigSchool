@@ -50,11 +50,19 @@ textarea {
     text-align: center;
     background-color: #d41d50;
     color: #fff;
-    width: 60ps;
+    width: 60px;
     border-radius: 8px;
 }
 .course > li .details{
     position: absolute;
     top: 0;
     left: 70px;
+}
+.course > li .action{
+    display: none;
+    left:70px;
+    position:absolute;
+}
+.course > li:hover .action{
+    display:block;
 }
