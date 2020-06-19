@@ -26,9 +26,7 @@ namespace Web_Lab456.Controllers.Api
 
             var course = _dbContext.Courses.Single(c => c.Id == id && c.LecturerId == userId);
             if(course.IsCanceled)
-            {
                 return NotFound();
-            }
             course.IsCanceled = true;
             _dbContext.SaveChanges();
 
