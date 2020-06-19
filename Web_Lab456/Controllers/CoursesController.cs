@@ -75,7 +75,10 @@ namespace Web_Lab456.Controllers
                 .Include(l => l.Category)
                 .ToList();
 
-                return View(courses);
+                return View(new CoursesViewModel()
+                {
+                    UpcomingCourses = courses
+                });
         }
 
         [Authorize]
