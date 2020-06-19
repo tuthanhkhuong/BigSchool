@@ -27,7 +27,7 @@ namespace Web_Lab456.Controllers
 
             var attendance = new Attendance
             {
-                CourseId = AttendanceDto.courseId,
+                CourseId = attendanceDto.CourseId,
                 AttendeeId = userId
             };
             _dbContext.Attendances.Add(attendance);
