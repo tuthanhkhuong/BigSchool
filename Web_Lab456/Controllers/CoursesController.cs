@@ -53,6 +53,18 @@ namespace Web_Lab456.Controllers
             return RedirectToAction("Mine", "Courses");
         }
 
+        [Authorize]
+        public ActionResult Following()
+        {
+            var userId = User.Identity.GetUserId();
+            var viewModel = _dbContext.Followings
+                .Where(a => a.FollowerId == userId)
+                .Select(a => a.Followee)
+                .ToList();
+
+            return View(viewModel);
+        }
+
         public ActionResult Mine()
         {
             var userId = User.Identity.GetUserId();

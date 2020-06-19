@@ -32,6 +32,7 @@ namespace Web_Lab456.Controllers
             };
             _dbContext.Attendances.Add(attendance);
             _dbContext.SaveChanges();
+
             return Ok();
         }
 

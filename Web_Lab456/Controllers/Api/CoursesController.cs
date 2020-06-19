@@ -13,6 +13,7 @@ namespace Web_Lab456.Controllers.Api
     {
         public ApplicationDbContext _dbContext { get; set; }
 
+
         public CoursesController()
         {
             _dbContext = new ApplicationDbContext();
