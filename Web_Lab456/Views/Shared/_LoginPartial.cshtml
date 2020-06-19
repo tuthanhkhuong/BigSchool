@@ -1,4 +1,5 @@
-﻿@using Microsoft.AspNet.Identity
+﻿@model Web_Lab456.ViewModels.CoursesViewModel
+@using Microsoft.AspNet.Identity
 @if (Request.IsAuthenticated)
 {
     using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm", @class = "navbar-right" }))
