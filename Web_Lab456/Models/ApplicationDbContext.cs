@@ -36,12 +36,12 @@ namespace Web_Lab456.Models
 
             modelBuilder.Entity<ApplicationUser>()
                 .HasMany(u => u.Followers)
-                .WithRequired(f => f.Followes)
+                .WithRequired(f => f.Followee)
                 .WillCascadeOnDelete(false);
 
             modelBuilder.Entity<ApplicationUser>()
                 .HasMany(u => u.Followees)
-                .WithRequired(f => f.Followers)
+                .WithRequired(f => f.Follower)
                 .WillCascadeOnDelete(false);
 
             base.OnModelCreating(modelBuilder);
